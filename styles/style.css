@@ -70,7 +70,7 @@ button[type="submit"]:hover {
   text-align: center;
 }
 
-/* Birtday page styles */
+/* Birthday page styles */
 .song {
   visibility: hidden;
 }
@@ -315,19 +315,49 @@ button[type="submit"]:hover {
   }
 }
 
+/* ===== KHUSUS PERBAIKAN TAMPILAN HP (MAX-WIDTH 500PX) ===== */
 @media screen and (max-width: 500px) {
-  .login_form{
-    width: 350px;
-    height: 250px;
+  /* Form Login Responsive */
+  .login_form {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px 10px;
   }
 
+  input[type="text"],
+  input[type="password"],
+  button[type="submit"] {
+    width: 90%;
+  }
+
+  /* Padding Utama Kontainer */
   .container {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
+  }
+
+  .container > div {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  /* Penyesuaian Ukuran Font Teks */
+  .one {
+    font-size: 2.5rem;
+  }
+
+  .two {
+    font-size: 1rem;
+  }
+
+  .three {
+    font-size: 1.8rem;
   }
 
   .four .text-box {
     width: 90%;
+    padding: 15px;
   }
 
   .text-box .fake-btn {
@@ -335,29 +365,37 @@ button[type="submit"]:hover {
     right: 5px;
   }
 
+  .five p {
+    font-size: 1.3rem;
+  }
+
+  .five .idea-5 {
+    font-size: 2.2rem;
+  }
+
   .idea-5 span {
     display: block;
   }
 
   .idea-6 span {
-    font-size: 10rem;
+    font-size: 5rem;
   }
 
   .six .hat {
-    /* top: -20px; */
     width: 50px;
+    left: 32%;
   }
 
   .wish-hbd {
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 
   .wish h5 {
-    font-size: .8rem;
+    font-size: 0.9rem;
   }
 
   .nine p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: lighter;
   }
 }
